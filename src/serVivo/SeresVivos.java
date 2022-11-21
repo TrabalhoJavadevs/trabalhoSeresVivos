@@ -151,7 +151,12 @@ public class SeresVivos {
 		int escolhafinal = scan.nextInt();
 			switch(escolhafinal) {
 			case 1:
-				System.out.println(animal);
+				int sizeAnimal = animal.size();
+				if(sizeAnimal != 0) {
+					System.out.println(animal);
+				}else {
+					System.out.println("Não há nenhum cadastro para o reino Animalia");
+				}
 				break;
 			
 			case 2:
