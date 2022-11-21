@@ -150,6 +150,9 @@ public class SeresVivos {
 				break;
 			}
 		}
+		if (resposta == 1 || resposta == 2 || resposta == 3 || resposta == 4 || resposta == 5) {
+			
+		
 		System.out.println("Escolha um reino para ver a lista cadastrada: (1) Animalia | (2) Plantae | (3) Protista | (4) Monera | (5) Fungi | (6) Sair");
 		flag = false;
 		int escolhafinal = scan.nextInt();
@@ -208,7 +211,7 @@ public class SeresVivos {
 		        break;
 			}
 		
-		
+		}
 		}
 
 }}
