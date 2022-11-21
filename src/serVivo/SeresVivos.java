@@ -190,7 +190,7 @@ public class SeresVivos {
 					System.out.println(monera);
 				}
 				else {
-					System.out.println("Não há nenhum cadastro para o reino Protista");
+					System.out.println("Não há nenhum cadastro para o reino Monera");
 				}
 				break;
 
