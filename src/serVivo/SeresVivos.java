@@ -145,6 +145,10 @@ public class SeresVivos {
 				fungi.add(fe.getNomeEspecie());
 				break;
 				}
+			default: {
+				System.out.println("Digite uma opção válida");
+				break;
+			}
 		}
 		System.out.println("Escolha um reino para ver a lista cadastrada: (1) Animalia | (2) Plantae | (3) Protista | (4) Monera | (5) Fungi | (6) Sair");
 		flag = false;
@@ -160,22 +164,48 @@ public class SeresVivos {
 				break;
 			
 			case 2:
-				System.out.println(plantae);
+				int sizePlantae = plantae.size();
+				if(sizePlantae != 0) {
+					System.out.println(plantae);
+				}
+				else {
+					System.out.println("Não há nenhum cadastro para o reino Plantae");
+				}
 				break;
 			case 3:
-				System.out.println(protista);
+				int sizeProtista = protista.size();
+				if(sizeProtista != 0) {
+					System.out.println(protista);
+				}
+				else {
+					System.out.println("Não há nenhum cadastro para o reino Protista");
+				}
 				break;
 			case 4:
-				System.out.println(monera);
+				int sizeMonera = monera.size();
+				if(sizeMonera != 0) {
+					System.out.println(monera);
+				}
+				else {
+					System.out.println("Não há nenhum cadastro para o reino Protista");
+				}
 				break;
 
 			case 5: 
+				int sizeFungi = fungi.size();
+				if(sizeFungi != 0) {
 					System.out.println(fungi);
+				}
+				else {
+					System.out.println("Não há nenhum cadastro para o reino Fungi");
+				}
 					break;
 			case 6: 
 				System.out.println("Você escolheu sair");
 				break;
-		
+			default:
+				System.out.println("Digite uma opção válida");
+		        break;
 			}
 		
 		
